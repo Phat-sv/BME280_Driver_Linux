@@ -1,0 +1,15 @@
+----------------CAI DAT DRIVER BME280 ----------------
+1. make clean
+2. sudo rmmod driver_bme
+3. make
+4. sudo insmod driver_bme.ko
+5. sudo chmod 666 /dev/bme280
+
+---------------BIEN DICH THU VIEN-----------------
+1. gcc -c lib_bme280.c -o lib_bme280.o
+2. ar rc liblib_bme280.a lib_bme280.o
+3. gcc main_bme280.c -L. -llib_bme280 -o run
+4. ./run
+
+dau tien vao phai open driver, sau do setup cho driver cac thong so.
+
